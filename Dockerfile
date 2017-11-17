@@ -1,6 +1,6 @@
 # -*- sh -*-
 FROM base/archlinux
-MAINTAINER Ulises Jeremias Cornejo Fandos, ulisescf.24@gmail.com
+MAINTAINER Ulises Jeremias Cornejo Fandos <ulisescf.24@gmail.com>
 
 RUN echo -e "[multilib]\nInclude = /etc/pacman.d/mirrorlist" > /tmp/multilib
 RUN cat /etc/pacman.conf /tmp/multilib > /tmp/pacman.conf
