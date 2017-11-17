@@ -7,6 +7,7 @@ RUN cat /etc/pacman.conf /tmp/multilib > /tmp/pacman.conf
 RUN mv /tmp/pacman.conf /etc/pacman.conf
 RUN pacman -Syu --noconfirm
 RUN pacman -S --noconfirm curl unzip lib32-zlib lib32-ncurses lib32-bzip2
+RUN rm -rf /tmp/* /var/tmp/*
 WORKDIR /home
 
 RUN curl get.pharo.org/stable+vm | bash
